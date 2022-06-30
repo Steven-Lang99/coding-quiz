@@ -1,0 +1,96 @@
+*, *::before, *::after{
+    box-sizing: border-box;
+}
+ body{
+    padding: 0;
+    margin: 0;
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.container {
+    width: 900px;
+    max-width: 80%;
+    height: 400px;
+    max-width: 80%;
+    background-color: red;
+    border-radius: 5px;
+    padding: 10px
+
+}
+
+.btn-grid{
+    display: grid
+}
+
+.controls{
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+.title{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;  
+    font-size: large;
+}
+
+.hide{
+    display: none;
+}
+
+.instructions{
+    display: flex;
+    text-align: center;  
+    font-size: large;
+}
+
+.remove{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center; 
+}
+
+.btn{
+    margin-right: 400px;
+}
+/* .hide{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} */
+/* .center{
+    text-align: center;
+}
+.center p {
+font-size: large;
+padding: 20px
+}
+
+
+.row, .column {
+    display: flex;
+}
+
+.column {
+    flex-direction: column;
+}
+.justify-content-between {
+    justify-content: space-between;
+}
+
+
+.align-item-center{
+    align-items:center;
+}
+
+header.main-header {
+    padding: 7px 2%;
+} */
