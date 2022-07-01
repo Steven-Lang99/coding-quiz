@@ -4,7 +4,7 @@ var questionContainerElement = document.getElementById('question-container')
 var questionElement = document.getElementById('question')
 var answerButtonEl = document.getElementById('answer-button')
 var startButton = document.getElementById('start-btn')
-var scoreEl = document.getElementById('score')
+var scoreEl = document.getElementById('scoreArea')
 var timeEl = document.getElementById('count')
 var qIndex = 0
 
@@ -33,7 +33,7 @@ var questions = [
 
 
 startButton.addEventListener('click', startGame)
-
+// my start button starts the game and then hides itself for the questions.
 function startGame() {
    console.log('Started')
    // startButton.classList.add('hide')
@@ -43,7 +43,7 @@ function startGame() {
    startTimer();
    showQuestion();
 }
-//timer
+//this my time I tried to get it so it would subtract the time with incorrect score.
 function startTimer(){
    var counter = 50;
    setInterval(function() {
@@ -64,7 +64,7 @@ function startTimer(){
 //  };
 
 
-
+//This function shows the choices and when they are click they would have outputed the score for right and wrong.
 function showQuestion() {
    // questionElement.innerText = questions.question
   var queueQuestion = questions[qIndex]
@@ -81,7 +81,7 @@ queueQuestion.choices.forEach(function(choice, i){
       if(choice === queueQuestion.answer){
          console.log('correct');
          //score++
-      } else {counter = counter-=10;
+      } else {console.log('incorrect');
       }
       //score--
 
@@ -89,12 +89,14 @@ queueQuestion.choices.forEach(function(choice, i){
       showQuestion()
        });
    answerButtonEl.appendChild(choiceBtn)
+   
 })
-}
 
+}
+//My next part would have been showing my scores and the initials but I ran out of time trying to figure out how to do that.
 function showScores(){
    questionContainerElement.classList.add('hide')
-  
+   scoreEl.classList.remove('hide')
   
    }
    //check if the answer is right or wrong 

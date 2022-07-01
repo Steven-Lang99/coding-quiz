@@ -78,6 +78,7 @@ font-size: large;
     padding-top: 20px;
     padding-bottom: 20px;
     color: white;
+    font-size: 15px;
     background-color: rgb(21, 21, 90);
 }
 
@@ -95,6 +96,7 @@ font-size: large;
 .choice{
     margin: 5px;
     color: white;
+    font-size: 15px;
     border-radius: 5px;
     align-items: left;
     padding: 25px;
@@ -102,6 +104,7 @@ font-size: large;
     padding-left: 50px;
     padding-right: 50px;
 }
+
 /* .hide{
     display: flex;
     justify-content: center;
@@ -114,6 +117,10 @@ font-size: large;
 font-size: large;
 padding: 20px
 } */
+
+  
+  
+
 
 html, body{
     height: 100%;

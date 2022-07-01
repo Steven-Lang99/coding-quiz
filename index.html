@@ -18,9 +18,10 @@
 
 
 <body class="column">
-    
+
     <div class="container">
         <div id="remove" class="title">
+            <!--Code for start of game-->
             <div>
                 <h1 id="header">Coding Quiz</h1>
                 <div class="instructions">
@@ -32,6 +33,7 @@
                     Start!</button>
             </div>
         </div>
+        <!--Code for questions-->
         <div id="question-container" class="hide">
             <div id="question">Question</div>
 
@@ -43,54 +45,21 @@
 
             </div>
         </div>
-
+        <!--Was working on implementing a score area-->
         <div class="scores">
-            <div id="scoreArea" class= "hide">
-            <input type="text" name="initials" id="initials">
-            <button id= "submitScore" class="submit">Sumbit Score</button>
+            <form>
+                <div id="scoreArea" class="hide">
+                    <input type="text" name="initials" id="initials">
+                    <button type="submit" id="submitScore" class="submit">Submit Score</button>
 
-            </div>
+                </div>
+            </form>
             <!-- <button id="start-btn" class="start-btn-btn" onclick="start()">
                 Start!</button> -->
         </div>
     </div>
     </div>
     </div>
-    <!-- <header class="main-header row justify-content-between align-item-center">
-        <h3>View Highscore</h3>
-        <nav>
-            <p>Time:</p>
-
-        </nav> -->
-    <!-- </header> -->
-
-    <!-- <main class="center">
-        <h2>Question</h2>
-        
-        <p>Try to answer the following code-related questions within the time limit.
-            Keep in mind that incorrect answers will penalize your score/time by ten seconds!
-        </p>
-        <button><a href="#">Start Quiz!</a></button>
-    </main> -->
-
-
-
-
-    <!-- <nav> 
-            <ul>
-
-                <li> <button id="clickButton"><a href="#">Answer one</a></button></li>
-                <li><button id="wrongButton3"><a href="#">Answer two</a></button></li>
-                <li> <button id="wrongButton2"><a href="#">Answer three</a></button></li>
-                <li> <button id="wrongButton1"><a href="#">Answer four</a></button></li>
-            </ul>
-        </nav> -->
-    <!-- <input id="readTheInput" /> -->
-
-
-
-
-
 
     <script src="./java.js"></script>
 </body>
