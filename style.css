@@ -18,7 +18,7 @@
     max-width: 80%;
     height: 400px;
     max-width: 80%;
-    background-color: red;
+    /* background-color: red; */
     border-radius: 5px;
     padding: 10px
 
@@ -53,7 +53,7 @@ align-items: center;
 }
 
  div p {
-    font-size: 20px;
+    font-size: 25px;
 }
 
 #remove {
@@ -77,6 +77,30 @@ font-size: large;
     padding: 50px;
     padding-top: 20px;
     padding-bottom: 20px;
+    color: white;
+    background-color: rgb(21, 21, 90);
+}
+
+#question{
+    font-size: 40px;
+    font-weight: bold;
+    font-family: sans-serif;
+}
+#answer-button{
+    margin: 5px;
+    padding: 50px;
+    justify-content: left;
+    
+}
+.choice{
+    margin: 5px;
+    color: white;
+    border-radius: 5px;
+    align-items: left;
+    padding: 25px;
+    background-color: rgb(21, 21, 90);
+    padding-left: 50px;
+    padding-right: 50px;
 }
 /* .hide{
     display: flex;

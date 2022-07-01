@@ -5,6 +5,7 @@ var questionElement = document.getElementById('question')
 var answerButtonEl = document.getElementById('answer-button')
 var startButton = document.getElementById('start-btn')
 var scoreEl = document.getElementById('score')
+var timeEl = document.getElementById('count')
 var qIndex = 0
 
 var questions = [
@@ -14,19 +15,19 @@ var questions = [
       choices: ['JavaScript', 'terminal/bash', 'for loops', 'console.log']
       },
    {
-      answer: 'orange',
-      choices: ['red', 'orange', 'blue', 'green'],
-      question: 'what color is an orange?'
+      answer: 'booleans',
+      choices: ['strings', 'booleans', 'alerts', 'numbers'],
+      question: 'Commonly used data type DO Not include?'
    },
    {
-      answer: 'red',
-      question: 'what color is the ocean',
-      choices: ['red', 'orange', 'blue', 'green']
+      answer: 'parenthesis',
+      question: 'The condition in an if/else statement is enclosed with___.',
+      choices: ['quotes', 'curly brackets', 'parenthesis', 'square brackets']
    },
    {
-      answer: 'red',
-      question: 'what color is the ocean',
-      choices: ['red', 'orange', 'blue', 'green']
+      answer: 'All of the above',
+      question: 'Arrays in JavaScript can be used to store___.',
+      choices: ['numbers and strings', 'other arrays', 'booleans', 'All of the above']
    }
 ];
 
@@ -44,12 +45,11 @@ function startGame() {
 }
 //timer
 function startTimer(){
-   var counter = 20;
+   var counter = 50;
    setInterval(function() {
      counter--;
      if (counter >= 0) {
-       span = document.getElementById("count");
-       span.innerHTML = counter;
+       timeEl.innerHTML = 'Time: ' + counter;
      }
      if (counter === 0) {
          alert('sorry, out of time');
@@ -81,7 +81,7 @@ queueQuestion.choices.forEach(function(choice, i){
       if(choice === queueQuestion.answer){
          console.log('correct');
          //score++
-      } else {console.log('incorrect')
+      } else {counter = counter-=10;
       }
       //score--
 
@@ -92,11 +92,11 @@ queueQuestion.choices.forEach(function(choice, i){
 })
 }
 
-// function result(){
-
+function showScores(){
+   questionContainerElement.classList.add('hide')
   
   
-//    }
+   }
    //check if the answer is right or wrong 
    //questions[qIndex].answer
    //move to the next question using qIndex++
@@ -106,96 +106,10 @@ queueQuestion.choices.forEach(function(choice, i){
 
 
 
-// var questions = [
-//    {
-//       question: 'what color is the sky?',
-//       choices: ['red','blue','green'],
-//       answer: 'blue'
-// }
-// ]
 
 
-// var wrapperEl = document.querySelector('.wrapper');
-// var data = ['orange', 'apple', 'grape'];
+ 
 
 
 
 
-
-// for (var i = 0; i <question.length; i++){
-// var newEl = document.createElement('p');
-
-// newEl.innerText = question[i].question;
-
-// wrapperEl.append(newEl)
-
-// }
-
-// console.log(newEl)
-
-// var shuffledQuestions, currentQuestionIndex
- // shuffledQuestions = questions.sort(() => Math.random() - .5)
-   // currentQuestionIndex = 0
-
-// ('beforeend', `
-// <div> class="question">
-// <p>${question[i].question}</p>
-// </div>
-// `);
-
- // question.answers.forEach(answer => {
-   //    var button = document.createElement('button')
-   //    button.innerText = answer.text
-   //    button.classList.add('btn')
-   //    if (answer.correct) {
-   //       button.dataset.correct = answer.correct
-   //    }
-   //    button.addEventListener('click', selectAnswer)
-   //    answerButtonsElement.appendChild(button)
-   // })
-
-
-// function setNextQuestion() {
-//    // resetState()
-//    showQuestion(shuffledQuestions[currentQuestionIndex])
-// }
-// // function shuffledQuestions(question) {
-   
-// // }
-
-
-// function resetState(){
-//    while(answerButtonsElement.firstChild) {
-//       answerButtonsElement.removeChild(answerButtonElement.firstChild)
-//    }
-// }
-
-// function selectAnswer(e){
-// var selectButton = e.target
-// var correct = selectButton.dataset.correct
-// setStatusClass(document.body, correct)
-// Array.from(answerButtonsElement.children).forEach(button => {
-//    setStatusClass(button,button.dataset.correct)
-// })
-// if(shuffledQuestions.length > currentQuestionIndex + 1)
-// }
-
-
-
-
-// document.getElementById("clickButton").addEventListener("click", () =>{
-//     document.getElementById("readTheInput").value += "Correct";
-//  });
-
-//  document.getElementById("wrongButton1").addEventListener("click", () =>{
-//     document.getElementById("readTheInput").value += "Wrong";
-//  });
-//  document.getElementById("wrongButton2").addEventListener("click", () =>{
-//     document.getElementById("readTheInput").value += "Wrong";
-//  });
-//  document.getElementById("wrongButton3").addEventListener("click", () =>{
-//     document.getElementById("readTheInput").value += "Wrong";
-//  });
-//  document.getElementById("wrongButton4").addEventListener("click", () =>{
-//     document.getElementById("readTheInput").value += "Wrong";
-//  });
