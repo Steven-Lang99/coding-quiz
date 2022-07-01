@@ -4,6 +4,7 @@ var questionContainerElement = document.getElementById('question-container')
 var questionElement = document.getElementById('question')
 var answerButtonEl = document.getElementById('answer-button')
 var startButton = document.getElementById('start-btn')
+var scoreEl = document.getElementById('score')
 var qIndex = 0
 
 var questions = [
@@ -76,16 +77,26 @@ queueQuestion.choices.forEach(function(choice, i){
    choiceBtn.setAttribute('class', 'choice')
    choiceBtn.setAttribute('value', choice)
    choiceBtn.textContent = i + 1 + '. ' +  choice;
-   choiceBtn.onclick = result()
+   choiceBtn.addEventListener('click', () => {
+      if(choice === queueQuestion.answer){
+         console.log('correct');
+         //score++
+      } else {console.log('incorrect')
+      }
+      //score--
+
+      qIndex++
+      showQuestion()
+       });
    answerButtonEl.appendChild(choiceBtn)
 })
 }
 
-function result(){
+// function result(){
 
   
   
-   }
+//    }
    //check if the answer is right or wrong 
    //questions[qIndex].answer
    //move to the next question using qIndex++
