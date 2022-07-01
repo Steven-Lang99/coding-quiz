@@ -1,18 +1,19 @@
 *, *::before, *::after{
     box-sizing: border-box;
 }
- body{
+  body{
     padding: 0;
     margin: 0;
     display: flex;
     width: 100vw;
     height: 100vh;
-    justify-content: center;
-    align-items: center;
+    /* justify-content: center; */
+    /* align-items: center; */
 
 }
 
 .container {
+    margin-left: 500px;
     width: 900px;
     max-width: 80%;
     height: 400px;
@@ -38,7 +39,7 @@ align-items: center;
     text-align: center;
     justify-content: center;
     align-items: center;  
-    font-size: large;
+    /* font-size: large; */
 }
 
 .hide{
@@ -51,6 +52,14 @@ align-items: center;
     font-size: large;
 }
 
+ div p {
+    font-size: 20px;
+}
+
+#remove {
+font-size: large;
+}
+
 .remove{
     display: flex;
     text-align: center;
@@ -59,7 +68,15 @@ align-items: center;
 }
 
 .btn{
+    padding: 25px;
     margin-right: 400px;
+} 
+
+#start-btn{
+    margin: 50px;
+    padding: 50px;
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 /* .hide{
     display: flex;
@@ -72,9 +89,11 @@ align-items: center;
 .center p {
 font-size: large;
 padding: 20px
+} */
+
+html, body{
+    height: 100%;
 }
-
-
 .row, .column {
     display: flex;
 }
@@ -84,6 +103,7 @@ padding: 20px
 }
 .justify-content-between {
     justify-content: space-between;
+    
 }
 
 
@@ -93,4 +113,9 @@ padding: 20px
 
 header.main-header {
     padding: 7px 2%;
-} */
+    
+}
+
+header.main-header nav p{
+    text-decoration: none;
+}

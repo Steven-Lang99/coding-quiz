@@ -8,37 +8,47 @@
     <title>Coding Quiz</title>
 </head>
 
-<body class="correct">
-    <!-- class="column" -->
+<header class="main-header row justify-content-between align-item-center">
+    <h3>View Highscore</h3>
+    <nav>
+        <p id="count">time</p>
 
+    </nav>
+</header>
+
+
+<body class="column">
+    
     <div class="container">
-        <div class="title">
-            <div id="remove">
-                <div id="header">Coding Quiz</div>
-            
-            <div class="instructions">
-                <p>Try to answer the following code-related questions within the time limit.
-                    Keep in mind that incorrect answers will penalize your score/time by ten seconds!
-                </p>
-            </div>
+        <div id="remove" class="title">
+            <div>
+                <h1 id="header">Coding Quiz</h1>
+                <div class="instructions">
+                    <p>Try to answer the following code-related questions within the time limit.
+                        Keep in mind that incorrect answers will penalize your score/time by ten seconds!
+                    </p>
+                </div>
+                <button id="start-btn" class="start-btn-btn" onclick="start()">
+                    Start!</button>
             </div>
         </div>
         <div id="question-container" class="hide">
-        <div id="question">Question</div>
-        
-        <div id="answer-button" class="btn-grid">
-            <button class="btn">Answer 1</button>
-            <button class="btn">Answer 2</button>
-            <button class="btn">Answer 3</button>
-            <button class="btn">Answer 4</button>
+            <div id="question">Question</div>
 
+            <div id="answer-button" class="btn-grid">
+                <!-- <button class="btn">Answer 1</button>
+                <button class="btn">Answer 2</button>
+                <button class="btn">Answer 3</button>
+                <button class="btn">Answer 4</button> -->
+
+            </div>
         </div>
-    </div>
-   
-    <div class="controls">
 
-        <button id="start-btn" class="start-btn-btn">Start!</button>
-    </div>
+        <div class="controls">
+
+            <!-- <button id="start-btn" class="start-btn-btn" onclick="start()">
+                Start!</button> -->
+        </div>
     </div>
     </div>
     </div>
